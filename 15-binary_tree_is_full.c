@@ -13,6 +13,7 @@ if (tree == NULL)
 return (0);
 
 if ((tree->left == NULL && tree->right == NULL) || (tree->left && tree->right))
-return (binary_tree_is_full(tree->left) && binary_tree_is_full(tree->right));
 return (0);
+
+return (binary_tree_is_full(tree->left) && binary_tree_is_full(tree->right));
 }
