@@ -13,14 +13,14 @@ if (tree == NULL)
 return (0);
 
 
-size_t count = 0;
+size_t nodes = 0;
 
 if (tree->left || tree->right)
-count++;
+nodes++;
 
 
-count += binary_tree_nodes(tree->left);
-count += binary_tree_nodes(tree->right);
+nodes += binary_tree_nodes(tree->left);
+nodes += binary_tree_nodes(tree->right);
 
-return (count);
+return (nodes);
 }
